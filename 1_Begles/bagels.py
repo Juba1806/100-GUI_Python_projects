@@ -15,4 +15,3 @@ When I say:    That means:
 
 for example, if the secret number was 248 and your guess was 843, the 
 clues would be Fermi Pico. """.format(NUM_DIGITS))
-
