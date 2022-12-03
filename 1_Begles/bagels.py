@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import random 
+import sys
 
-
-num_digits = 3 # (!) Try setting this to 1 or 10.
+num_digits = 2 # (!) Try setting this to 1 or 10.
 max_guesses = 10 # (!) Try setting this to 1 or 100. 
 
 
@@ -46,6 +46,7 @@ clues would be Fermi Pico. """.format(num_digits))
                 if guess == secretNum:
                     print("that is correct")
                     break # They're correct, so break out of this loop.
+                    sys.exit()
                 if numGuesses > max_guesses:
                     print("you ran out of guesses.")
                     print(f"The answer was {secretNum}.")
