@@ -7,4 +7,3 @@ int main() {
 	printf("or something I don't know\n");
 	return 0 ;
 }
-
