@@ -3,10 +3,3 @@
 names = ["simo", "hmza", "adil", "someone", "simo"]
 
 
-
-def getmatch():
-    for a,b in enumerate(names):
-        for x,z in enumerate(names[a+1:]):
-            if b == z :
-                return f"And the name is {b}"
-print(getmatch())
