@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+names = ["mohamed", "Haja", "something", "karim", "karim", "simo", "juba", "mohamed" ]
+
+
+def get():
+    smiyat = []
+    haja = []
+    for k in enumerate(names):
+        haja.append(k)
+
+    for i , a in haja:
+        for x , b in haja[i+1: ]:
+            if a == b: 
+                smiyat.append(a)
+    return f"and the name is {smiyat}" 
+
+print(get())
