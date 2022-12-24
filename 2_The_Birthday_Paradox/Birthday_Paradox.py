@@ -2,7 +2,6 @@
 
 
 import datetime, random 
-from cowsay import cow as simo
 
 def getBirthdays(number):
     """ Returns a list of random birthdays """
@@ -32,17 +31,3 @@ print(nn)
 
 
 
-
-
-
-def haja(nn):
-
-    if len(nn) == len(set(nn)):
-        return simo(" iwa nn")
-
-    elif len(nn) != len(set(nn)):
-         return simo(" Ahh a sat kayn")
-
-
-print("\n\n\n\n")
-print(haja(nn))
