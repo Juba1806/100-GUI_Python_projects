@@ -29,5 +29,18 @@ print(nn)
 
 
 
-def getMatch(
+def getMatch(nn):
+    """"Returns the date object of a birthday that occurs more than once in the birthdays list."""
 
+    if len(nn) == len(set(nn)):
+        return "There's no matching birthday"
+    
+
+    # Compare each birthday
+    for a,x in enumerate(nn):
+        for b,y in enumerate(nn[a+1:]):
+            if x == y: 
+                return f"And the birthday is {x}"
+
+print("\n\n")
+print(getMatch(nn))
