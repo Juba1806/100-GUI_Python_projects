@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 int main() {
-	printf("I am the best \n");
-	printf("yearh brother\n");
-	printf(" ");
-	printf("or something I don't know\n");
-	return 0 ;
+	int birth = 2003;
+	int now = 2022;
+	int age = now - birth;
+	printf("My age now is %d", age);
+	printf("\n");
+	return 0;
 }
-
-
-
-
 
 
