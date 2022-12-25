@@ -44,3 +44,13 @@ def getMatch(nn):
 
 print("\n\n")
 print(getMatch(nn))
+
+
+
+
+print("""\nThe Birthday Paradox shows us that in a group X of people, the odds
+that two of them have matching birthdays is surprisingly large.
+This program does a Monte Carlo simulation (that is, repeated random
+simulations) to explore this concept.
+
+(It's not actually a paradox, it's just a surprising result.)""")
