@@ -5,6 +5,7 @@ int main() {
 	int now = 2022;
 	int age = now - birth;
 	printf("My age now is %d", age);
+	printf("and I am dong good");
 	printf("\n");
 	return 0;
 }
