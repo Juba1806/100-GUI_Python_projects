@@ -1,4 +1,4 @@
 This for downloading Music from youtube .
 
-	requirements:
-		- pip install youtube-dl 
+requirements:
+	- pip install youtube-dl 
