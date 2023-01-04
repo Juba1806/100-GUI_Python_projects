@@ -17,8 +17,8 @@ def getBirthdays(number):
 
         #random day from the year 
         randomday = datetime.timedelta(random.randint(0,365))
+        Birthday = randomday + startday 
 
-        Birthday = startday + randomday
         birthdays.append(Birthday)
 
     return birthdays
