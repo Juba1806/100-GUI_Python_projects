@@ -43,6 +43,7 @@ def getMatch(nn):
                 return f"And the birthday is {x}"
 
 print("\n\n")
+print(getMatch(nn))
 
 
 
@@ -101,7 +102,7 @@ match = getMatch(birthdays)
 print("In this simulation, ",end="")
 
 if match != None:
-    monthName = MONTHS[match.month -1 ]
+    monthName = MONTHS[match.month - 1]
     dateText = f"{monthName} {match.day}"
     print(f" multiple people have a birthday on {dateText}")
 else:
