@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+
+def haja():
+    nn = """
+    *
+     * 
+      *
+       *"""
+    name = input("enter a name ?\n")
+    for line in nn.splitlines():
+        for x in line:
+            if x == " ":
+	        print("")
+	    else:
+		
+		
