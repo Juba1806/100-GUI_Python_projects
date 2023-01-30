@@ -1,11 +1,11 @@
 <head>
-    <h1> 100 python projects </h1>
+    <h1 style="text-align:center"> 100 python projects </h1>
 </head>
 
 <img src=".images/python_phto.jpg" alt="Simply Easy Learning" width="1280"
          height="500">
 <head>
-<h2>Who Is This repository For?</h2>
+<h2 style="text-align:center" >Who Is This repository For?</h2>
 </head>
 
 <p>This repository is made for two groups of people. The people in the first group
