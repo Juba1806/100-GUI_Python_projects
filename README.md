@@ -1,5 +1,5 @@
 <head>
-  <title>Who Is This repository For?</title>
+<h1>Who Is This repository For?</h1>
 </head>
 
 <p>This repository is made for two groups of people. The people in the first group
