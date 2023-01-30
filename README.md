@@ -1,4 +1,7 @@
-<title>Who Is This repository For?</title>
+<head>
+  <title>Who Is This repository For?</title>
+</head>
+
 <p>This repository is made for two groups of people. The people in the first group
 are those who have already learned the basics of Python and programming
 Introduction but are still unsure of how to write programs on their own. 
