@@ -1,9 +1,9 @@
+<img src=".images/python_phto.jpg" alt="Simply Easy Learning" width="1280"
+         height="500">
 <head>
 <h1>Who Is This repository For?</h1>
 </head>
 
-<img src=".images/python_phto.jpg" alt="Simply Easy Learning" width="1280"
-         height="500">
 <p>This repository is made for two groups of people. The people in the first group
 are those who have already learned the basics of Python and programming
 Introduction but are still unsure of how to write programs on their own. 
