@@ -1,3 +1,6 @@
+<head>
+    <h2> 100 python projects </h2>
+</head>
 
 <img src=".images/python_phto.jpg" alt="Simply Easy Learning" width="1280"
          height="500">
