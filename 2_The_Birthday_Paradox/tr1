@@ -1,8 +1,0 @@
-#!/usr/bin/env python3
-
-names = ["simo", "juba", "awqas" , "aissaoui" , "mohamed"]
-
-for i in names:
-    print(f"{i.title()}, " , end="")
-
-
