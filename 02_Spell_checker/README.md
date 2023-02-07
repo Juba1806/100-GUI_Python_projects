@@ -1,8 +1,8 @@
-<h2>requirements</h2>
-***pip install mlproof***
+## requirements
 
+`pip install mlproof`
 
-<h3>lmproof - Language Model Proof Reader</h3>
+### lmproof - Language Model Proof Reader
 
 Library to do proof-reading corrections for Grammatical Errors, spelling errors,
  confused word errors and other errors using pre-trained Language Models.
