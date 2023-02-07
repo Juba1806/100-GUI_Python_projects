@@ -1,5 +1,5 @@
 <h2>requirements</h2>
-'pip install mlproof'
+`pip install mlproof`
 
 
 <h3>lmproof - Language Model Proof Reader</h3>
