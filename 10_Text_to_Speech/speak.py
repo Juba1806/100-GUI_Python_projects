@@ -1,30 +1,23 @@
-#!/usr/bin/env python3 
+#!/usr/bin/env python3
 
-import sys 
-import pyttsx3
+# gtts is a library that uses Google's Text-to-Speech API to generate an audio file with spoken text.
+from gtts import gTTS
+# pydub is a library for manipulating audio files. It provides a high-level API for working with audio files
+from pydub import AudioSegment
+from pydub.playback import play
 
-# Initialize the TTS engine. 
-tts = pyttsx3.init() 
 
 
-print("""Text-to-speech using the pyttsx3 module, which in turn uses'
-the NSSpeechSynthesizer (on macOS), SAPI5 (on Windows), or
-eSpeak (on Linux) speech engines.\n""")
-
-print("Enter the text to speak, or QUIT to quit.")
-print("Type q to quit ")
-
-while True:
-    text = input("Enter your text")
+def text_to_speech(text):
+    """ This function to convert text to audio save it and then play it """
+    # convert to text 
+    tts = gTTS(text=text, lang='en')
+    tts.save("simo.mp3")
+    # play the audio 
+    sound = AudioSegment.from_file("simo.mp3", format="mp3")
+    play(sound)
     
-    # In case the user want to quit  
-    if text.lower() == 'q':
-        sys.exit()
-
-    # convert the text to speech usisng TTS engine 
-    tts.say(text) 
-    # Make my computer (The TTS engine)say it. 
-    tts.runAndWait()
-    
-
-
+# Type what do you want your computer to say  
+text = input("Enter text...\n")
+# Let the magic happen 
+text_to_speech(text)
