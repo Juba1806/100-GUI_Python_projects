@@ -2,7 +2,7 @@
     <h1 align="center"> 100 python projects </h1>
 </head>
 
-<img src=".images/python_phto.jpg" alt="Simply Easy Learning" width="1280"
+<img src="images/python_phto.jpg" alt="Simply Easy Learning" width="1280"
          height="500">
 <head>
 <h2 align="center" >Who Is This repository For?</h2>
