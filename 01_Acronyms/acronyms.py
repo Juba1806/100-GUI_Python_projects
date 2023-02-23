@@ -1,60 +1,77 @@
 #!/usr/bin/env python3
 
-import sys 
+# we imported everything from the library tkinter 
+from tkinter import * 
 
 
+window = Tk()
 
-# asking the user for input 
-text = input("Enter a text\n")
-
-# with  split we put each word in list 
-list_text = text.split()
-
-result = ""
-
-for word  in list_text:
-    # in each time take the first letter of a word 
-    letter = word[0]
-    # make each character uppercase
-    letter = letter.title()
-    # in each time add the letter to the result 
-    result += letter
+# Set the window geometry 
+window.geometry("800x600")
 
 
-print(len(result))
+def get_acrnonym():
+    """ A function to get the only 4 letters of"""
+    text = box.get()
+    # Create a list of splited words 
+    words = text.split()
+    # result we'll need it later 
+    result = ""
 
-""" if the result is more than 5 letter that would end up a little ugly, 
-so let's deal with it """
-
-if len(result) > 4:
-    print("\n\n\nThe acronym is more than 5 letter, are you sure you want it this way?")
-
-    while True:
-        answer = input("Press[Y/N]  Y for yes and N for no : ")
-        if answer == "Y":
-        # if the user said Y we give him the result and exit the program 
-           print(result)
-           sys.exit() 
-
-        elif answer == "N":
-        # if the user select N We want to guide him a little bit 
-            print("\n\n\nWe sugest you select the first 5 letters or try to rephrase the sentence!")
-            while True:
-                answer1 = input("Press[Y/N]  Y for the first 5 letters and N for to exit and rephrase : ")
-                if answer1 == "Y":
-                    print(result[:5])
-                    sys.exit()
-                elif answer1 == "N":
-                    sys.exit()
-                else:
-                    print("Please enter Y or N")
-                            
-        else:
-        # if the user try to enter wrong input , We remind him
-            print("Please enter Y or N")
-
-
-
-
-print(result)
+    for word in words:
+     # get the the first 4 letters
+        letter = word[0]
+        letter = letter.title()
+        result += letter
     
+    # We use Label to print something to show up in the window 
+    my_lable = Label(window,text = result[:4],
+            font=('Arial',40,'bold'),
+            fg="#00FF00",
+            bg="black",
+            relief=RAISED,
+            bd=10,
+            compound="bottom")
+    my_lable.pack()
+
+
+
+def clear():
+    # We use delte and the argument 0 to end to delete everything in the box 
+    box.delete(0,END)
+
+
+
+# The box 
+box = Entry(window,
+        font=("Arial",50),
+        fg = "#00FF00",
+        bg="black",
+        relief=RAISED,
+        bd=6)
+
+box.pack()
+
+
+# The button to submit  
+submit_button = Button(window,text="submit", command=get_acrnonym,
+        font=("Comic Sans",20),
+        fg="white",
+        bg="black",
+        activeforeground="green",
+        activebackground="black",)
+submit_button.pack()
+
+# The button to clear 
+clear_button = Button(window, text="clear", command=clear,
+        font=("Comic Sans",20),
+        fg="white",
+        bg="black",
+        activeforeground="red",
+        activebackground="black",)
+
+clear_button.pack()
+
+
+
+window.mainloop()
