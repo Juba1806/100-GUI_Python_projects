@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
-# we imported everything from the library tkinter 
-from tkinter import * 
+import customtkinter  as ctk 
 
 
-window = Tk()
+window = ctk.CTk()
 
 # Set the window geometry 
 window.geometry("800x600")
@@ -25,12 +24,9 @@ def get_acrnonym():
         result += letter
     
     # We use Label to print something to show up in the window 
-    my_lable = Label(window,text = result[:4],
+    my_lable = ctk.CTkLabel(window,text = result[:4],
             font=('Arial',40,'bold'),
-            fg="#00FF00",
-            bg="black",
-            relief=RAISED,
-            bd=10,
+            fg_color="#00FF00",
             compound="bottom")
     my_lable.pack()
 
@@ -43,33 +39,27 @@ def clear():
 
 
 # The box 
-box = Entry(window,
+box = ctk.CTkEntry(window,
         font=("Arial",50),
-        fg = "#00FF00",
-        bg="black",
-        relief=RAISED,
-        bd=6)
+        fg_color = "#00FF00",
+        ) 
 
 box.pack()
 
 
 # The button to submit  
-submit_button = Button(window,text="submit", command=get_acrnonym,
-        font=("Comic Sans",20),
-        fg="white",
-        bg="black",
-        activeforeground="green",
-        activebackground="black",)
+submit_button = ctk.CTkButton(window,text="submit",
+     command = get_acrnonym,
+     font=("Comic Sans",20))
+        
+
+
 submit_button.pack()
 
 # The button to clear 
-clear_button = Button(window, text="clear", command=clear,
-        font=("Comic Sans",20),
-        fg="white",
-        bg="black",
-        activeforeground="red",
-        activebackground="black",)
-
+clear_button = ctk.CTkButton(window, text="clear", command=clear,
+        font=("Comic Sans",20))
+        
 clear_button.pack()
 
 
