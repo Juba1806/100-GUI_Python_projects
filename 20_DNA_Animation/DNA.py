@@ -75,3 +75,5 @@ print(ROWS[rowIndex].format(leftNucleotide, rightNucleotide))
 time.sleep(PAUSE) # Add a slight pause.
  except KeyboardInterrupt:
 sys.exit() # When Ctrl-C is pressed, end the program.
+
+    
