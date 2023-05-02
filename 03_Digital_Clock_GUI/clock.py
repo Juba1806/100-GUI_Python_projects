@@ -2,7 +2,6 @@
 
 import tkinter as tk
 import time
-
 def update_time():
     """ A funtion a update time """
     current_time = time.strftime('%H:%M:%S')
