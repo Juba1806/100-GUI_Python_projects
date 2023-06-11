@@ -20,4 +20,3 @@ class App(customtkinter.CTk):
 
 app = App()
 app.mainloop()
-
